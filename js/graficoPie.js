@@ -6,7 +6,7 @@ let myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
     datasets: [{
-      data: [resultadoCasaApartamento, 10, 40, 20],
+      data: [10, 10, 40, 20],
       
       backgroundColor: colorHex
     }],
