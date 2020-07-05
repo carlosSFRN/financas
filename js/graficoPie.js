@@ -1,12 +1,12 @@
 let ctx = document.getElementById('myChart').getContext('2d');
-let labels = ['Casa/Apartamento', 'Alimentacao', 'Saude', 'Transporte', 'Educacao', 'Lazer e extras'];
-let colorHex = ['#ffc107', '#EFCA08', '#43AA8B', '#253D5B'];
+let labels = ['Saldo','Casa/Apartamento', 'Alimentacao', 'Saude', 'Transporte', 'Educacao', 'Lazer e extras'];
+let colorHex = ['#28a745', '#ffc107', '#28a745', '#007bff', '#343a40', '#17a2b8', '#dc3545'];
 
 let myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
     datasets: [{
-      data: [10, 10, 40, 20],
+      data: [40,10,10,10,10,10,10],
       
       backgroundColor: colorHex
     }],
@@ -22,7 +22,7 @@ let myChart = new Chart(ctx, {
         color: '#fff',
         anchor: 'end',
         align: 'start',
-        offset: -10,
+        offset: -2,
         borderWidth: 2,
         borderColor: '#fff',
         borderRadius: 25,
@@ -40,4 +40,3 @@ let myChart = new Chart(ctx, {
     }
   }
 })
-debugger;

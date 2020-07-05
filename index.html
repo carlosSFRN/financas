@@ -12,6 +12,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="js/currency.min.js"></script>
@@ -26,15 +28,16 @@
         </a>
     </nav>
 
+    <img src="img/banner-financas.jpg" class="w-100 h-25">
     
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container text-center">
             <h1 class="display-4">Será que você esta com saldo positivo?</h1>
             <p class="lead">Avaliação gratuita dos seus gastos pessoais, com ótimas recomendações para alavancar sua vida financeira</p>
         </div>
     </div>
     <div class="col-md-12 row">
-        <div class="container-fluid bg-light col-md-3">
+        <div class="container-fluid col-md-3">
             <a href="https://go.hotmart.com/Q37767379S" rel="nofollow"><img src="https://www.williamhunt.com.br//materiais-para-divulgacao/250x250_2.jpg" border="0" class="img-thumbnail" /></a>
         </div>
         
@@ -45,14 +48,12 @@
                 <form id="contact-form" method="post">
                     <div class="controls">
                         <div class="row">
-
                             <div class="col-sm-4">
                                 <div class="form-group">
                                      <label for="saldo" class="mr-2">Saldo</label>
-                                     <input type="text" class="form-control" id="saldo" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                     <input type="text" class="form-control" id="saldo" name="saldo" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </form>
@@ -147,26 +148,67 @@
             </div>
 
             <div class="container-fluid bg-light mt-3">
-                <div class="card-header bg-success text-white row mb-3">Alimentacao</div>
+                <div class="card-header bg-success text-white row mb-3">Alimentação</div>
                 <form id="contact-form" method="post">
                     <div class="controls">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="mercado">Mercado</label>
-                                    <input type="text" class="form-control" id="mercado" placeholder="R$ 0,00">
+                                    <input type="text" class="form-control" id="mercado" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="foradecasa">Fora de casa</label>
-                                    <input type="text" class="form-control" id="foradecasa" placeholder="R$ 0,00">
+                                    <input type="text" class="form-control" id="foradecasa" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="outrosAlimentacao">Outros</label>
-                                    <input type="text" class="form-control" id="outrosAlimentacao" placeholder="R$ 0,00">
+                                    <input type="text" class="form-control" id="outrosAlimentacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoAlimentacao" name="resultadoAlimentacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="container-fluid bg-light mt-3">
+                <div class="card-header bg-primary text-white row mb-3">Saúde</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="planodesaude">Plano de Saúde</label>
+                                    <input type="text" class="form-control" id="planodesaude" name="planodesaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="remedios">Remédios</label>
+                                    <input type="text" class="form-control" id="remedios" name="remedios" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="academia">Academia</label>
+                                    <input type="text" class="form-control" id="academia" name="academia" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosSaude">Outros</label>
+                                    <input type="text" class="form-control" id="outrosSaude" name="outrosSaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                         </div>
@@ -174,44 +216,8 @@
                     
                 </form>
             </div>
-
-            <div class="container-fluid bg-light mt-3">
-                <div class="card-header bg-primary text-white row mb-3">Saude</div>
-                <form id="contact-form" method="post">
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="mercado">Plano de Sáude</label>
-                                    <input type="text" class="form-control" id="mercado" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="foradecasa">Remédios</label>
-                                    <input type="text" class="form-control" id="foradecasa" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outrosAlimentacao">Academia</label>
-                                    <input type="text" class="form-control" id="outrosAlimentacao" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outros">Outros</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </form>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoSaude" name="resultadoSaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
             </div>
 
             <div class="container-fluid bg-light mt-3">
@@ -221,42 +227,20 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="mercado">Financiamento carro/moto</label>
-                                    <input type="text" class="form-control" id="mercado" placeholder="R$ 0,00">
+                                    <label for="financiamentoCarroMoto">Financiamento carro/moto</label>
+                                    <input type="text" class="form-control" id="financiamentoCarroMoto" name="financiamentoCarroMoto" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="foradecasa">Seguro</label>
-                                    <input type="text" class="form-control" id="foradecasa" placeholder="R$ 0,00">
+                                    <label for="seguro">Seguro</label>
+                                    <input type="text" class="form-control" id="seguro" name="seguro" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outrosAlimentacao">IPVA</label>
-                                    <input type="text" class="form-control" id="outrosAlimentacao" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outros">Manutenção do carro</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outros">Gasolina</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outros">Estacionamento</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="ipva">IPVA</label>
+                                    <input type="text" class="form-control" id="ipva" name="ipva" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                         </div>
@@ -265,20 +249,83 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Transporte público</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="manutencaoCarro">Manutenção do carro</label>
+                                    <input type="text" class="form-control" id="manutencaoCarro" name="manutencaoCarro" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Táxi/Apps de transporte</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="gasolina">Gasolina</label>
+                                    <input type="text" class="form-control" id="gasolina" name="gasolina" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Outros</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="estacionamento">Estacionamento</label>
+                                    <input type="text" class="form-control" id="estacionamento" name="estacionamento" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="transportePublico">Transporte público</label>
+                                    <input type="text" class="form-control" id="transportePublico" name="transportePublico" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="taxiAppdeTransporte">Táxi/Apps de transporte</label>
+                                    <input type="text" class="form-control" id="taxiAppdeTransporte" name="taxiAppdeTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosTransporte">Outros</label>
+                                    <input type="text" class="form-control" id="outrosTransporte" name="outrosTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoTransporte" name="resultadoTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="container-fluid bg-light mt-3">
+                <div class="card-header bg-info text-white row mb-3">Educação</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="mensalidade">Mensalidade</label>
+                                    <input type="text" class="form-control" id="mensalidade" name="mensalidade" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="cursos">Cursos</label>
+                                    <input type="text" class="form-control" id="cursos" name="cursos" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="materialLivros">Material/Livros</label>
+                                    <input type="text" class="form-control" id="materialLivros" name="materialLivros" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosEducacao">Outros</label>
+                                    <input type="text" class="form-control" id="outrosEducacao" name="outrosEducacao" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                         </div>
@@ -286,44 +333,8 @@
                     
                 </form>
             </div>
-
-            <div class="container-fluid bg-light mt-3">
-                <div class="card-header bg-info text-white row mb-3">Educacao</div>
-                <form id="contact-form" method="post">
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="mercado">Mensalidade</label>
-                                    <input type="text" class="form-control" id="mercado" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="foradecasa">Cursos</label>
-                                    <input type="text" class="form-control" id="foradecasa" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outrosAlimentacao">Material/Livros</label>
-                                    <input type="text" class="form-control" id="outrosAlimentacao" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="outros">Outros</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </form>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoEducacao" name="resultadoEducacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
             </div>
 
             <div class="container-fluid bg-light mt-3">
@@ -333,20 +344,20 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="mercado">Viagens</label>
-                                    <input type="text" class="form-control" id="mercado" placeholder="R$ 0,00">
+                                    <label for="viagens">Viagens</label>
+                                    <input type="text" class="form-control" id="viagens" name="viagens" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="foradecasa">Roupas</label>
-                                    <input type="text" class="form-control" id="foradecasa" placeholder="R$ 0,00">
+                                    <label for="roupas">Roupas</label>
+                                    <input type="text" class="form-control" id="roupas" name="roupas" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outrosAlimentacao">Cinema</label>
-                                    <input type="text" class="form-control" id="outrosAlimentacao" placeholder="R$ 0,00">
+                                    <label for="cinema">Cinema</label>
+                                    <input type="text" class="form-control" id="cinema" name="cinema" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                         </div>
@@ -355,22 +366,22 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Festas</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="festas">Festas</label>
+                                    <input type="text" class="form-control" id="festas" name="festas" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Animais domésticos</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="animaisDomesticos">Animais domésticos</label>
+                                    <input type="text" class="form-control" id="animaisDomesticos" name="animaisDomesticos" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
 
                             <div class="col-sm-4">
                                 <div class="form-group">
-                                    <label for="outros">Outros</label>
-                                    <input type="text" class="form-control" id="outros" placeholder="R$ 0,00">
+                                    <label for="outrosLazerExtras">Outros</label>
+                                    <input type="text" class="form-control" id="outrosLazerExtras" name="outrosLazerExtras" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
                                 </div>
                             </div>
                         </div>
@@ -378,17 +389,87 @@
                     
                 </form>
             </div>
-            
-        </div>
-        <div class="container-fluid bg-light col-md-3">
-            <h3 class="text-center mb-3">Resultado da sua avaliação</h3>
-            <div class="chart-wrapper" >
-                <canvas id="myChart"></canvas>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoLazerExtras" name="resultadoLazerExtras" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
             </div>
+
+        </div>
+        
+
+        <div class="container-fluid col-md-3">
+            <div class="bg-light pb-4">
+                <h3 class="text-center pt-4 pb-4">Resultado da sua avaliação</h3>
+                <!-- <div class="chart-wrapper">
+                    <canvas id="myChart"></canvas>
+                </div> -->
+                <ul class="list-unstyled container">
+                    <li class="mb-2">
+                        <p class="mb-0">Casa/Apartamento</p>
+                        <span id="despesaSomaPorcentagem1"></span><span class="float-right" id="despesaSoma1"></span>
+                    </li>
+                    <li class="mb-2">
+                        <p class="mb-0">Alimentação</p>
+                        <span id="despesaSomaPorcentagem2"></span><span class="float-right" id="despesaSoma2"></span>
+                    </li>
+                    <li class="mb-2">
+                        <p class="mb-0">Saúde</p>
+                        <span id="despesaSomaPorcentagem3"></span><span class="float-right" id="despesaSoma3"></span>
+                    </li>
+                    <li class="mb-2">
+                        <p class="mb-0">Transporte</p>
+                        <span id="despesaSomaPorcentagem4"></span><span class="float-right" id="despesaSoma4"></span>
+                    </li>
+                    <li class="mb-2">
+                        <p class="mb-0">Educação</p>
+                        <span id="despesaSomaPorcentagem5"></span><span class="float-right" id="despesaSoma5"></span>
+                    </li>
+                    <li class="mb-2">
+                        <p class="mb-0">Lazer e extras</p>
+                        <span id="despesaSomaPorcentagem6"></span><span class="float-right" id="despesaSoma6"></span>
+                    </li>
+                </ul>
+            </div>
+            <footer class="clearfix bg-success text-center">
+                <p class="text-white pt-3" id="tituloSaldo">Saldo</p>
+                <p class="text-white pb-3"id="resultadoSaldoXDespesas" name="resultadoSaldoXDespesas">R$ 0,00</p>
+            </footer>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark darken-3 pt-4 mt-3">
+
+        
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-white py-3">© 2020 - <span id="year"></span> Copyright:
+            <a href="#" class="text-white"> tudosobreeconomia.com</a>
+        </div>
+  
+    </footer>
+
 </body>
+
+<!-- script pegar ano atual -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<!-- script calculo -->
 <script src="js/calculoDespesas/calculoCasaApartamento.js"></script>
+<script src="js/calculoDespesas/calculoAlimentacao.js"></script>
+<script src="js/calculoDespesas/calculoSaude.js"></script>
+<script src="js/calculoDespesas/calculoTransporte.js"></script>
+<script src="js/calculoDespesas/calculoEducacao.js"></script>
+<script src="js/calculoDespesas/calculoLazerExtras.js"></script>
+<script src="js/calculoDespesas/calculoSaldoXDespesas.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
