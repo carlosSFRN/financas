@@ -9,3 +9,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
+
+.progress {
+    height: 2rem !important;
+}

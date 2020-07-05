@@ -401,31 +401,44 @@
                 <h3 class="text-center pt-4 pb-4">Resultado da sua avaliação</h3>
                 <!-- <div class="chart-wrapper">
                     <canvas id="myChart"></canvas>
-                </div> -->
+                </div>  -->
+                
                 <ul class="list-unstyled container">
                     <li class="mb-2">
-                        <p class="mb-0">Casa/Apartamento</p>
-                        <span id="despesaSomaPorcentagem1"></span><span class="float-right" id="despesaSoma1"></span>
+                        <span>Casa/Apartamento</span><span class="float-right" id="despesaSoma1"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning text-dark font-weight-bold" id="despesaSomaPorcentagem1" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                     <li class="mb-2">
-                        <p class="mb-0">Alimentação</p>
-                        <span id="despesaSomaPorcentagem2"></span><span class="float-right" id="despesaSoma2"></span>
+                        <span>Alimentação</span><span class="float-right" id="despesaSoma2"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-success text-dark font-weight-bold" id="despesaSomaPorcentagem2" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                     <li class="mb-2">
-                        <p class="mb-0">Saúde</p>
-                        <span id="despesaSomaPorcentagem3"></span><span class="float-right" id="despesaSoma3"></span>
+                        <span>Saúde</span><span class="float-right" id="despesaSoma3"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary text-dark font-weight-bold" id="despesaSomaPorcentagem3" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                     <li class="mb-2">
-                        <p class="mb-0">Transporte</p>
-                        <span id="despesaSomaPorcentagem4"></span><span class="float-right" id="despesaSoma4"></span>
+                        <span>Transporte</span><span class="float-right" id="despesaSoma4"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark text-white font-weight-bold" id="despesaSomaPorcentagem4" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                     <li class="mb-2">
-                        <p class="mb-0">Educação</p>
-                        <span id="despesaSomaPorcentagem5"></span><span class="float-right" id="despesaSoma5"></span>
+                        <span>Educação</span><span class="float-right" id="despesaSoma5"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-info text-dark font-weight-bold" id="despesaSomaPorcentagem5" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                     <li class="mb-2">
-                        <p class="mb-0">Lazer e extras</p>
-                        <span id="despesaSomaPorcentagem6"></span><span class="float-right" id="despesaSoma6"></span>
+                        <span>Lazer e extras</span><span class="float-right" id="despesaSoma6"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger text-dark font-weight-bold" id="despesaSomaPorcentagem6" role="progressbar" style="width: 0%;" aria-valuemax="100">0.00%</div>
+                        </div>
                     </li>
                 </ul>
             </div>

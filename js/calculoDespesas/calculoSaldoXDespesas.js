@@ -113,13 +113,6 @@ jQuery(document).ready(function(){
         add(despesaSoma5).
         add(despesaSoma6);
 
-        var despesaSomaPorcentagem1 = (despesaSoma1 / saldo) * 100;
-        var despesaSomaPorcentagem2 = (despesaSoma2 / saldo) * 100;
-        var despesaSomaPorcentagem3 = (despesaSoma3 / saldo) * 100;
-        var despesaSomaPorcentagem4 = (despesaSoma4 / saldo) * 100;
-        var despesaSomaPorcentagem5 = (despesaSoma5 / saldo) * 100;
-        var despesaSomaPorcentagem6 = (despesaSoma6 / saldo) * 100;
-
         var saldoSoma = saldo - despesaSoma;
 
         var optionBRL = { style: 'currency', currency: 'BRL' };
@@ -133,12 +126,28 @@ jQuery(document).ready(function(){
         $('#despesaSoma5').html(formatBRL.format(despesaSoma5));
         $('#despesaSoma6').html(formatBRL.format(despesaSoma6));
 
+        //valores de porcentagem por cada grupo de gasto x saldo
+        var despesaSomaPorcentagem1 = (despesaSoma1 / saldo) * 100;
+        var despesaSomaPorcentagem2 = (despesaSoma2 / saldo) * 100;
+        var despesaSomaPorcentagem3 = (despesaSoma3 / saldo) * 100;
+        var despesaSomaPorcentagem4 = (despesaSoma4 / saldo) * 100;
+        var despesaSomaPorcentagem5 = (despesaSoma5 / saldo) * 100;
+        var despesaSomaPorcentagem6 = (despesaSoma6 / saldo) * 100;
+
         $('#despesaSomaPorcentagem1').html(despesaSomaPorcentagem1.toFixed(2)+"%");
         $('#despesaSomaPorcentagem2').html(despesaSomaPorcentagem2.toFixed(2)+"%");
         $('#despesaSomaPorcentagem3').html(despesaSomaPorcentagem3.toFixed(2)+"%");
         $('#despesaSomaPorcentagem4').html(despesaSomaPorcentagem4.toFixed(2)+"%");
         $('#despesaSomaPorcentagem5').html(despesaSomaPorcentagem5.toFixed(2)+"%");
         $('#despesaSomaPorcentagem6').html(despesaSomaPorcentagem6.toFixed(2)+"%");
+
+        $("#despesaSomaPorcentagem1").css("width", despesaSomaPorcentagem1.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem2").css("width", despesaSomaPorcentagem2.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem3").css("width", despesaSomaPorcentagem3.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem4").css("width", despesaSomaPorcentagem4.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem5").css("width", despesaSomaPorcentagem5.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem6").css("width", despesaSomaPorcentagem6.toFixed(2)+"%");
+        
     });
 });
 
