@@ -141,12 +141,12 @@ jQuery(document).ready(function(){
         $('#despesaSomaPorcentagem5').html(despesaSomaPorcentagem5.toFixed(2)+"%");
         $('#despesaSomaPorcentagem6').html(despesaSomaPorcentagem6.toFixed(2)+"%");
 
-        $("#despesaSomaPorcentagem1").css("width", despesaSomaPorcentagem1.toFixed(2)+"%");
-        $("#despesaSomaPorcentagem2").css("width", despesaSomaPorcentagem2.toFixed(2)+"%");
-        $("#despesaSomaPorcentagem3").css("width", despesaSomaPorcentagem3.toFixed(2)+"%");
-        $("#despesaSomaPorcentagem4").css("width", despesaSomaPorcentagem4.toFixed(2)+"%");
-        $("#despesaSomaPorcentagem5").css("width", despesaSomaPorcentagem5.toFixed(2)+"%");
-        $("#despesaSomaPorcentagem6").css("width", despesaSomaPorcentagem6.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem1ProgressBar").css("width", despesaSomaPorcentagem1.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem2ProgressBar").css("width", despesaSomaPorcentagem2.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem3ProgressBar").css("width", despesaSomaPorcentagem3.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem4ProgressBar").css("width", despesaSomaPorcentagem4.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem5ProgressBar").css("width", despesaSomaPorcentagem5.toFixed(2)+"%");
+        $("#despesaSomaPorcentagem6ProgressBar").css("width", despesaSomaPorcentagem6.toFixed(2)+"%");
         
     });
 });

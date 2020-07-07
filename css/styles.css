@@ -1,15 +1,26 @@
-
-#resultadoSaldoXDespesas
-{
-    font-family: 'Open Sans', sans-serif;
-}
-
-#tituloSaldo
+*
 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
 
+.progress-bar .progress-bar-text {
+    position: absolute;
+}
+
+.transporte {
+    background-color: #FF851B !important;
+}
+
+.alimentacao {
+    background-color: #B10DC9 !important;
+}
+
 .progress {
     height: 2rem !important;
+}
+
+#recomendacao {
+    height: 96px;
+    font-weight: bold;
 }
