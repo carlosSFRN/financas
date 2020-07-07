@@ -6,6 +6,7 @@
 
 .progress-bar .progress-bar-text {
     position: absolute;
+    font-size: 0.9rem;
 }
 
 .transporte {
