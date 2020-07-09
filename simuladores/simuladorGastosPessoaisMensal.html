@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171584596-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-171584596-1');
+    </script>
+
+    <script data-ad-client="ca-pub-5113518715982197" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Tudo sobre economia">
+    <meta name="description" content="Focado em tudo que se relaciona sobre economia e suas trendings atuais. ">
+    <meta name="keywords" content="economia;calculadora;gastos domesticos;blog;">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Portuguese">
+
+    <link rel="shortcut icon" href="/img/icone_menu.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/currency.min.js"></script>
+    <script src="/js/jquery.maskMoney.min.js"></script>
+    <title>Simuladores | Tudo sobre economia</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+        <div class="d-md-flex d-block w-100">
+            <div class="collapse navbar-collapse mx-auto w-auto justify-content-center">
+                <div class="navbar-nav">
+                    <a class="navbar-brand mb-0" href="#">
+                        <img src="/img/icone_menu.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        <span style="color:#3d50b5">tudo</span><span style="color:#45a0bb">sobre</span><span style="color:#eaa02a">economia</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+        <a class="navbar-brand d-md-none" href="#">
+            <img src="/img/icone_menu.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span style="color:#3d50b5">tudo</span><span style="color:#45a0bb">sobre</span><span style="color:#eaa02a">economia</span>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-md-flex d-block w-100">
+            <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/">Blog</a>
+                    
+                    <div class="dropdown">
+                        <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Simuladores
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="simuladorGastosPessoaisMensal.html">Gastos Pessoais</a>
+                          <a class="dropdown-item" href="#">Financiamento de Imóvel</a>
+                          <a class="dropdown-item" href="#">Financiamento de Veículo</a>
+                          <a class="dropdown-item" href="#">Objetivos e metas</a>
+                        </div>
+                      </div>
+                      <a class="nav-item nav-link" href="#">Parcerias/Divulgação</a>
+                      <a class="nav-item nav-link" href="#">Donate</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <img src="img/banner-financas.jpg" class="w-100 h-25"> -->
+    
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container text-center">
+            <h1 class="display-4">Será que você esta com saldo positivo?</h1>
+            <p class="lead">Avaliação gratuita dos seus gastos pessoais, com ótimas recomendações para alavancar sua vida financeira</p>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="container-fluid col-md-3">
+            <a href="https://go.hotmart.com/Q37767379S" rel="nofollow"><img src="https://www.williamhunt.com.br//materiais-para-divulgacao/250x250_2.jpg" border="0" class="img-thumbnail" /></a>
+        </div>
+        
+        <div class="container-fluid col-md-6">
+
+            <div class="bg-light">
+                <div class="card-header bg-success text-white mb-3">Renda Mensal</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                     <label for="saldo" class="mr-2">Saldo</label>
+                                     <input type="text" class="form-control" id="saldo" name="saldo" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="bg-light">
+                <div class="card-header bg-warning text-white mb-3">Casa/Apartamento</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="aluguelFinanciamento">Aluguel/Financiamento</label>
+                                    <input type="text" class="form-control" name="aluguelFinanciamento" id="aluguelFinanciamento" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="condominio">Condomínio</label>
+                                    <input type="text" class="form-control" name="condominio" id="condominio" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="iptu">IPTU</label>
+                                    <input type="text" class="form-control" name="iptu" id="iptu" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="agua">Água</label>
+                                    <input type="text" class="form-control" name="agua" id="agua" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="luz">Luz</label>
+                                    <input type="text" class="form-control" name="luz" id="luz" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="gas">Gás</label>
+                                    <input type="text" class="form-control" name="gas" id="gas" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="internet">Internet</label>
+                                    <input type="text" class="form-control" name="internet" id="internet" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="text" class="form-control" name="telefone" id="telefone" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="tvacabo">Tv a Cabo</label>
+                                    <input type="text" class="form-control" name="tvacabo" id="tvacabo" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosCasaApartamento">Outros</label>
+                                    <input type="text" class="form-control" id="outrosCasaApartamento" name="outrosCasaApartamento" data-affixes-stay="true" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoCasaApartamento" name="resultadoCasaApartamento" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="bg-light mt-3">
+                <div class="card-header text-white mb-3 alimentacao">Alimentação</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="mercado">Mercado</label>
+                                    <input type="text" class="form-control" id="mercado" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="foradecasa">Fora de casa</label>
+                                    <input type="text" class="form-control" id="foradecasa" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosAlimentacao">Outros</label>
+                                    <input type="text" class="form-control" id="outrosAlimentacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoAlimentacao" name="resultadoAlimentacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="bg-light mt-3">
+                <div class="card-header bg-primary text-white mb-3">Saúde</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="planodesaude">Plano de Saúde</label>
+                                    <input type="text" class="form-control" id="planodesaude" name="planodesaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="remedios">Remédios</label>
+                                    <input type="text" class="form-control" id="remedios" name="remedios" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="academia">Academia</label>
+                                    <input type="text" class="form-control" id="academia" name="academia" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosSaude">Outros</label>
+                                    <input type="text" class="form-control" id="outrosSaude" name="outrosSaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoSaude" name="resultadoSaude" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="bg-light mt-3">
+                <div class="card-header text-white mb-3 transporte">Transporte</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="financiamentoCarroMoto">Financiamento carro/moto</label>
+                                    <input type="text" class="form-control" id="financiamentoCarroMoto" name="financiamentoCarroMoto" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="seguro">Seguro</label>
+                                    <input type="text" class="form-control" id="seguro" name="seguro" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="ipva">IPVA</label>
+                                    <input type="text" class="form-control" id="ipva" name="ipva" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="manutencaoCarro">Manutenção do carro</label>
+                                    <input type="text" class="form-control" id="manutencaoCarro" name="manutencaoCarro" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="gasolina">Gasolina</label>
+                                    <input type="text" class="form-control" id="gasolina" name="gasolina" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="estacionamento">Estacionamento</label>
+                                    <input type="text" class="form-control" id="estacionamento" name="estacionamento" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="transportePublico">Transporte público</label>
+                                    <input type="text" class="form-control" id="transportePublico" name="transportePublico" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="taxiAppdeTransporte">Táxi/Apps de transporte</label>
+                                    <input type="text" class="form-control" id="taxiAppdeTransporte" name="taxiAppdeTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosTransporte">Outros</label>
+                                    <input type="text" class="form-control" id="outrosTransporte" name="outrosTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoTransporte" name="resultadoTransporte" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="bg-light mt-3">
+                <div class="card-header bg-info text-white mb-3">Educação</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="mensalidade">Mensalidade</label>
+                                    <input type="text" class="form-control" id="mensalidade" name="mensalidade" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="cursos">Cursos</label>
+                                    <input type="text" class="form-control" id="cursos" name="cursos" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="materialLivros">Material/Livros</label>
+                                    <input type="text" class="form-control" id="materialLivros" name="materialLivros" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosEducacao">Outros</label>
+                                    <input type="text" class="form-control" id="outrosEducacao" name="outrosEducacao" ata-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoEducacao" name="resultadoEducacao" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+
+            <div class="bg-light mt-3">
+                <div class="card-header bg-danger text-white mb-3">Lazer e extras</div>
+                <form id="contact-form" method="post">
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="viagens">Viagens</label>
+                                    <input type="text" class="form-control" id="viagens" name="viagens" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="roupas">Roupas</label>
+                                    <input type="text" class="form-control" id="roupas" name="roupas" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="cinema">Cinema</label>
+                                    <input type="text" class="form-control" id="cinema" name="cinema" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="festas">Festas</label>
+                                    <input type="text" class="form-control" id="festas" name="festas" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="animaisDomesticos">Animais domésticos</label>
+                                    <input type="text" class="form-control" id="animaisDomesticos" name="animaisDomesticos" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="outrosLazerExtras">Outros</label>
+                                    <input type="text" class="form-control" id="outrosLazerExtras" name="outrosLazerExtras" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="card-footer">
+                <p class="card-text text-right">TOTAL <span type="text" id="resultadoLazerExtras" name="resultadoLazerExtras" data-affixes-stay="false" data-prefix="R$ " data-thousands="." data-decimal=",">0.00</span></p>
+            </div>
+        </div>
+
+        <div class="container-fluid col-md-3">
+            <div class="bg-light sticky-top">
+                <div class="card-header bg-dark text-center text-white mb-3">Resultado da sua avaliação</div>
+                
+                <ul class="list-unstyled container">
+                    <li class="mb-2">
+                        <span>Casa/Apartamento</span><span class="float-right" id="despesaSoma1"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning text-dark font-weight-bold" id="despesaSomaPorcentagem1ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem1" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <span>Alimentação</span><span class="float-right" id="despesaSoma2"></span>
+                        <div class="progress">
+                            <div class="progress-bar text-dark font-weight-bold alimentacao" id="despesaSomaPorcentagem2ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem2" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <span>Saúde</span><span class="float-right" id="despesaSoma3"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary text-dark font-weight-bold" id="despesaSomaPorcentagem3ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem3" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <span>Transporte</span><span class="float-right" id="despesaSoma4"></span>
+                        <div class="progress">
+                            <div class="progress-bar transporte text-dark font-weight-bold" id="despesaSomaPorcentagem4ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem4" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <span>Educação</span><span class="float-right" id="despesaSoma5"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-info text-dark font-weight-bold" id="despesaSomaPorcentagem5ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem5" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-2">
+                        <span>Lazer e extras</span><span class="float-right" id="despesaSoma6"></span>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger text-dark font-weight-bold" id="despesaSomaPorcentagem6ProgressBar" role="progressbar" style="width: 0%;" aria-valuemax="100">
+                                <span id="despesaSomaPorcentagem6" class="progress-bar-text ml-2">0.00%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <footer class="clearfix bg-success text-center">
+                    <p class="text-white pt-3" id="tituloSaldo">Saldo</p>
+                    <p class="text-white pb-3"id="resultadoSaldoXDespesas" name="resultadoSaldoXDespesas">R$ 0,00</p>
+                </footer>
+                <button class="btn btn-warning text-white w-100" id="recomendacao" data-toggle="modal" data-target=".bd-example-modal-lg">Recomendações</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!--diferenciar por perfis 
+                Devedor
+                    descricao do perfil 
+                        O gasto desse perfil e 
+                    apontar o seu maior gasto
+                    ultrapassar os saldo negativo de gastos da renda
+                    recomendar um novo valor de gastos e 
+                    mostrar o lucro que teria
+                Gastador
+                    descricao do perfil
+                    apontar o seu maior gasto
+                    para encaixar nesse perfil sera necessario
+                    ter alta porcentagem de gastos com lazer e 
+                    ultrapassar os 70% < 95% de gastos da renda
+                    recomendar um novo valor de gastos e mostrar o lucro que teria
+                Poupador
+                    descricao do perfil
+                    parabenizar pelo perfil
+                    para encaixar nesse perfil sera necessario nao ultrapassar 
+                    60% da renda
+            -->
+          </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    <footer class="page-footer font-small bg-dark mt-3">
+        
+        <div class="footer-copyright text-center text-white py-3">© 2020 - <span id="year"></span> Copyright:
+            <a href="#" class="text-white"> tudosobreeconomia.com</a>
+        </div>
+  
+    </footer>
+
+</body>
+
+<!-- script pegar ano atual -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<!-- script calculo -->
+<script src="/js/calculoDespesas/calculoCasaApartamento.js"></script>
+<script src="/js/calculoDespesas/calculoAlimentacao.js"></script>
+<script src="/js/calculoDespesas/calculoSaude.js"></script>
+<script src="/js/calculoDespesas/calculoTransporte.js"></script>
+<script src="/js/calculoDespesas/calculoEducacao.js"></script>
+<script src="/js/calculoDespesas/calculoLazerExtras.js"></script>
+<script src="/js/calculoDespesas/calculoSaldoXDespesas.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
