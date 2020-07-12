@@ -1,11 +1,12 @@
+
+
 *
 {
     font-family: 'Open Sans', sans-serif;
 }
 
-.row 
-{
-    margin-left: 0 !important;
+.text-line {
+    text-decoration: underline;
 }
 
 .progress-bar .progress-bar-text {
@@ -33,4 +34,48 @@
 .img-hover:hover {
     transition: .9s ease;
     opacity: 0.7 !important;
+}
+
+nav a {
+    font-weight: 700;
+}
+
+.hr-style {
+    width: 8rem; 
+    height:5px; 
+    background-color: #439db9;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.brand-tudo-color {
+    color: #3d50b5;
+}
+
+.brand-sobre-color {
+    color: #439db9;
+}
+
+.brand-economia-color {
+    color: #eaa02a;
+}
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background: #ffffff;;
+    opacity: 0.8;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+    border: 2px solid #439db9;
+}
+.text{
+    margin:20px 0px;
+}
+
+.fa{
+     color:#439db9;
 }

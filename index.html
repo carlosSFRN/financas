@@ -26,12 +26,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="/js/currency.min.js"></script>
     <script src="/js/jquery.maskMoney.min.js"></script>
-    <title>Home | Tudo sobre economia</title>
+    <title>Calculadoras | Tudo sobre economia</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-faded">
@@ -58,122 +58,172 @@
             <div class="d-md-flex d-block w-100">
                 <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="/">Blog</a>
+
+                        <a class="nav-item nav-link" href="/">Início</a>
                         
                         <div class="dropdown">
-                            <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Simuladores
+                            <a class="nav-item nav-link dropdown-toggle brand-economia-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Calculadoras
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="/simuladores/simuladorGastosPessoaisMensal.html">Gastos Pessoais</a>
+                              <a class="dropdown-item" href="/calculadoras/simuladorGastosPessoaisMensal.html">Gastos Pessoais</a>
                               <a class="dropdown-item" href="#">Financiamento de Imóvel</a>
                               <a class="dropdown-item" href="#">Financiamento de Veículo</a>
                               <a class="dropdown-item" href="#">Objetivos e metas</a>
                             </div>
                         </div>
-                        
-                        <a class="nav-item nav-link" href="#">Parcerias/Divulgação</a>
-                        <a class="nav-item nav-link" href="#">Doação</a>
+                        <a class="nav-item nav-link" href="/sobre.html">Sobre</a>
+                        <a class="nav-item nav-link" href="/ebooks.html">E-books</a>
+                        <a class="nav-item nav-link" href="/blog/index.html">Blog</a>
+                        <a class="nav-item nav-link" href="/contato.html">Contato</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 brand-sobre-color font-weight-bold">Consulte as nossas calculadoras</h1>
+            <hr class="hr-style">
+            <p class="lead brand-sobre-color">Calculadoras totalmente gratuitas com o intuito de ajudar você e as suas finanças.</p>
+        </div>
+    </div>
+
     
-    <div class="col-md-12 row">
-  
-        <div class="col-md-3">
-            <div class="card my-4">
-                <h5 class="card-header">Posts</h5>
-                <div class="card-body">
-                    <ul class="mb-0">
-                        <li>
-                            <a class="text-dark" href="/blog/5-dicas-para-equilibrar-suas-financas-pessoais.html">5 Dicas para equilibrar suas finanças pessoais</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#">Controle de gastos e sua importância</a>
-                        </li>
-                        <li>
-                            <a href="#">Como planejar sua independência financeira</a>
-                        </li>
-                        <li>
-                            <a href="#">Aplicativos para gerenciar suas finanças</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
+    <div class="box">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
+                        
+                        <div class="title">
+                            <h4>Gastos Pessoais</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a class="btn btn-outline-info" href="/calculadoras/simuladorGastosPessoaisMensal.html" role="button">Consultar</a>
+                        
+                    </div>
+                </div>	 
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+                    
+                        <div class="title">
+                            <h4>Financiamento de Imóvel</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a class="btn btn-outline-info" href="#" role="button">Consultar</a>
+                        
+                    </div>
+                </div>	 
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-car fa-3x" aria-hidden="true"></i>
+                        
+                        <div class="title">
+                            <h4>Financiamento de Veículo</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a class="btn btn-outline-info" href="#" role="button">Consultar</a>
+                        
+                    </div>
+                </div>	 
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-bullseye fa-3x" aria-hidden="true"></i>
+                        
+                        <div class="title">
+                            <h4>Objetivo e Metas</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a class="btn btn-outline-info" href="#" role="button">Consultar</a>
+                        
+                    </div>
+                </div>	 
+                
+                <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
+                    
+                        <div class="title">
+                            <h4>Google</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a href="#">Learn More</a>
+                        
+                    </div>
+                </div>	 
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            
+                    <div class="box-part text-center">
+                        
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        
+                        <div class="title">
+                            <h4>Github</h4>
+                        </div>
+                        
+                        <div class="text">
+                            <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        </div>
+                        
+                        <a href="#">Learn More</a>
+                        
+                    </div>
+                </div> -->
+            
+            </div>		
         </div>
-
-        <div class="col-md-6">
-            <h1 class="mt-4">Posts Recentes</h1>
-    
-            <hr>
-
-            <div class="card mb-4 my-4">
-                <a class="img-hover" href="blog/5-dicas-para-equilibrar-suas-financas-pessoais.html">
-                    <img class="card-img-top image" src="img/5-dicas-para-equilibrar-suas-financas-pessoais750x300.jpg" alt="5 dicas para equilibrar suas finanças pessoais">
-                </a>
-                <div class="card-body">
-                    <h4 class="card-text"><a class="text-dark" href="blog/5-dicas-para-equilibrar-suas-financas-pessoais.html">5 dicas para equilibrar suas finanças pessoais</a></h4>
-                    <p class="card-text">
-                        Neste artigo, mostraremos 5 dicas para equilibrar suas finanças, com o objetivo de mostrar ao leitor a importância de conquistar seu equilíbrio financeiro.
-                    </p>
-
-                </div>
-                <div class="card-footer text-muted font-weight-bold">
-                    Postado em Julho 8, 2020 by
-                    <span style="color:#3d50b5">tudo</span><span style="color:#45a0bb">sobre</span><span style="color:#eaa02a">economia</span>
-                </div>
-            </div>
-
-        </div>
-  
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-3">
-            <div class="card my-4">
-                <h5 class="card-header">Newsletter</h5>
-                <div class="card-body">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Email...">
-                    <span class="input-group-append">
-                    <button class="btn btn-secondary" type="button">Cadastrar</button>
-                    </span>
-                </div>
-                </div>
-            </div>
-
-            <div class="card my-4">
-                <h5 class="card-header">Doação</h5>
-                <div class="card-body text-center">
-                    <p>Se achou útil o nosso conteúdo, faça uma doação e mantenha o nosso site no ar.</p>
-                    <p>Obrigado!</p>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                        <input type="hidden" name="cmd" value="_s-xclick" />
-                        <input type="hidden" name="hosted_button_id" value="3TALAMHQULEBG" />
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                        <img alt="" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
-                </div>
-            </div>
-  
-        </div>
-  
-      </div>
-  
     </div>
 
     <footer class="page-footer font-small bg-dark mt-3">
         
-        <div class="footer-copyright text-center text-white py-3">© 2020 - <span id="year"></span> Copyright:
-            <a href="#" class="text-white"> tudosobreeconomia.com.br</a>
+        <div class="footer-copyright text-center text-white py-3">
+            © 2020 - <span id="year"></span> tudosobreeconomia. Todos os direitos reservados
         </div>
   
     </footer>
-  
+
 </body>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</html> 
+</html>
