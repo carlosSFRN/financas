@@ -104,7 +104,6 @@ jQuery(document).ready(function(){
         add(animaisDomesticos).
         add(outrosLazerExtras);
 
-
         var despesaSoma = 
         currency(despesaSoma1).
         add(despesaSoma2).
@@ -118,7 +117,21 @@ jQuery(document).ready(function(){
         var optionBRL = { style: 'currency', currency: 'BRL' };
         var formatBRL = new Intl.NumberFormat('pt-BR', optionBRL);
         $('#resultadoSaldoXDespesas').html(formatBRL.format(saldoSoma));
+        $('#despesaSomaTotal').html(formatBRL.format(despesaSoma));
 
+        //adicionar cor dinamica no Saldo
+        if(saldoSoma > 0)
+        {
+            $('.cor-dinamica-saldo').addClass('bg-success');
+            $('.cor-dinamica-saldo').removeClass('bg-danger');
+        }
+        if (saldoSoma < 0)
+        {
+            $('.cor-dinamica-saldo').addClass('bg-danger');
+            $('.cor-dinamica-saldo').removeClass('bg-success');
+        }
+
+        // formatar para valores em reais
         $('#despesaSoma1').html(formatBRL.format(despesaSoma1));
         $('#despesaSoma2').html(formatBRL.format(despesaSoma2));
         $('#despesaSoma3').html(formatBRL.format(despesaSoma3));
@@ -133,6 +146,63 @@ jQuery(document).ready(function(){
         var despesaSomaPorcentagem4 = (despesaSoma4 / saldo) * 100;
         var despesaSomaPorcentagem5 = (despesaSoma5 / saldo) * 100;
         var despesaSomaPorcentagem6 = (despesaSoma6 / saldo) * 100;
+
+        //valor total gasto em porcentagem
+        var despesaSomaTotalPorcentagem = 
+        despesaSomaPorcentagem1 + despesaSomaPorcentagem2 +
+        despesaSomaPorcentagem3 + despesaSomaPorcentagem4 +
+        despesaSomaPorcentagem5 + despesaSomaPorcentagem6;
+
+        // verificar o perfil financeiro
+
+        //poupador
+        if(despesaSomaTotalPorcentagem <= 69)
+        {
+            $("#conteudo-perfil-financeiro-p1").empty();
+            $("#conteudo-perfil-financeiro-p2").empty();
+            $("#conteudo-perfil-financeiro-p1").
+            html(`Você gastou equivalente a <span class="cor-dinamica font-weight-bold">${despesaSomaTotalPorcentagem.toFixed(2)+"%"}</span> da sua renda, que representa <span class="cor-dinamica font-weight-bold">${formatBRL.format(despesaSoma)}</span>
+            e assim te enquadramos no perfil <h4 class="font-weight-bold">POUPADOR!</h4>`);
+            $("#conteudo-perfil-financeiro-p2").
+            html("O poupador é alguém que planeja os seus gastos pensando no futuro. Diferentemente do devedor, esse perfil realmente decide praticar dicas de economia e fazer sobrar dinheiro. Com isso, ele adota hábitos de consumo controlado e monta uma reserva com os valores que poupa mensalmente.");
+        }
+        //gastador
+        if(despesaSomaTotalPorcentagem >= 70 && despesaSomaTotalPorcentagem <=99)
+        {
+            $("#conteudo-perfil-financeiro-p1").empty();
+            $("#conteudo-perfil-financeiro-p2").empty();
+            $("#conteudo-perfil-financeiro-p1").
+            html(`Você gastou equivalente a <span class="cor-dinamica font-weight-bold">${despesaSomaTotalPorcentagem.toFixed(2)+"%"}</span> da sua renda, que representa <span class="cor-dinamica font-weight-bold">${formatBRL.format(despesaSoma)}</span>
+            e assim te enquadramos no perfil <h4 class="font-weight-bold">GASTADOR!</h4>`);
+            $("#conteudo-perfil-financeiro-p2").
+            html("O gastador também tem um custo de vida alto, mas, diferentemente do perfil devedor, ele não contrai dívidas. Isso significa que pessoas com essa característica costumam não ter controle sobre os seus custos mensais, embora mantenham o cuidado de não gastar mais do que recebem.");
+        }
+        //devedor
+        if(despesaSomaTotalPorcentagem >= 100)
+        {
+            $("#conteudo-perfil-financeiro-p1").empty();
+            $("#conteudo-perfil-financeiro-p2").empty();
+            $("#conteudo-perfil-financeiro-p1").
+            html(`Você gastou equivalente a <span class="cor-dinamica font-weight-bold">${despesaSomaTotalPorcentagem.toFixed(2)+"%"}</span> da sua renda, que representa <span class="cor-dinamica font-weight-bold">${formatBRL.format(despesaSoma)}</span>
+            e assim te enquadramos no perfil <h4 class="font-weight-bold">DEVEDOR!</h4>`);
+            $("#conteudo-perfil-financeiro-p2").
+            html("As pessoas com esse perfil financeiro não vivem uma relação saudável com o dinheiro. Elas não conseguem administrar as suas finanças mensais e acabam constantemente precisando de uma renda extra para custear os gastos. Assim, pedem empréstimos e contraem dívidas com bancos ou familiares.");
+        }
+
+        //cor dinamica para a porcentagem
+        if(despesaSomaTotalPorcentagem < 100)
+        {
+            $('.cor-dinamica').addClass('text-success');
+            $('.cor-dinamica').removeClass('text-danger');
+        }
+        if(despesaSomaTotalPorcentagem > 100)
+        {
+            $('.cor-dinamica').addClass('text-danger');
+            $('.cor-dinamica').removeClass('text-success');
+        }
+
+        // distribuir os resultados total
+        $('#despesaSomaTotalPorcentagem').html(despesaSomaTotalPorcentagem.toFixed(2)+"%");
 
         $('#despesaSomaPorcentagem1').html(despesaSomaPorcentagem1.toFixed(2)+"%");
         $('#despesaSomaPorcentagem2').html(despesaSomaPorcentagem2.toFixed(2)+"%");
